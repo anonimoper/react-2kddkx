@@ -1,12 +1,12 @@
 import React from 'react'
 import './app.css'
 
-const Card = () =>
+const Card = (props) =>
 (
 <div className="card" >
-  <img className="card-img-top" src="https://raw.githubusercontent.com/anonimoper/react-2kddkx/master/Drawing%20(1).png" alt="Card image cap" />
+  <img className="card-img-top" src="https://raw.githubusercontent.com/anonimoper/react-2kddkx/master/Drawing%20(2).png" alt="Card image cap" />
   <div className="card-body">    
-    <h4 className="card-text"> Busco un Animal Perdido</h4>    
+    <h4 className="card-text text-center"> {props.text}</h4>    
   </div>
 </div>
 )

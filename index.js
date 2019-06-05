@@ -21,16 +21,16 @@ function App()
       <div class="offset-sm-1 col-sm-10">
         <div class="row">
           <div class="col-sm-3">
-            <Card />
+            <Card text = "BUSCO UN ANIMAL PERDIDO"/>
           </div>
           <div class="col-sm-3">
-            <Card />
+            <Card text = "HE ENCONTRADO UN ANIMAL"/>
           </div>    
           <div class="col-sm-3">
-            <Card />
+            <Card text = "QUIERO ADOPTAR UN ANIMAL"/>
           </div>
           <div class="col-sm-3">
-            <Card />
+            <Card text = "QUIERO COLABORAR CON UN PROTECTORA"/>
           </div>            
         </div>
 
