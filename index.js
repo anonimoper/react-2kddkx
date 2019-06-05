@@ -16,10 +16,25 @@ function App()
   const name = "Chuca";
   return (
     <div >
-      
       <Navbar />
-      <Header />
-      <Card />
+      <Header />      
+      <div class="offset-sm-1 col-sm-10">
+        <div class="row">
+          <div class="col-sm-3">
+            <Card />
+          </div>
+          <div class="col-sm-3">
+            <Card />
+          </div>    
+          <div class="col-sm-3">
+            <Card />
+          </div>
+          <div class="col-sm-3">
+            <Card />
+          </div>            
+        </div>
+
+      </div>
       
     </div>
   );
