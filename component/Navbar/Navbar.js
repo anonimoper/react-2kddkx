@@ -1,15 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './app.css'
 
 //static-top
 const Navbar = () => 
-(
+{
+  const [collapse, setCollapse] = useState("collapse navbar-collapse");
+  return (
 <nav class="navbar navbar-expand-lg navbar-light ">
   <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" onClick={ () => { (collapse.indexOf("show") >=0) ? setCollapse("collapse navbar-collapse") :  setCollapse("collapse navbar-collapse show") }} type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  <div className={collapse} id="navbarNavAltMarkup">
     <div class="navbar-nav mr-auto">   
     </div>  
     <div class="navbar-nav">
@@ -24,5 +26,7 @@ const Navbar = () =>
 
 </nav>
 )
+}
+
 
 export default Navbar;
