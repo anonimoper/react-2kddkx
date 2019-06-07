@@ -30,7 +30,7 @@ function App()
             <Card text = "QUIERO ADOPTAR UN ANIMAL"/>
           </div>
           <div class="col-sm-3">
-            <Card text = "QUIERO COLABORAR CON UN PROTECTORA"/>
+            <Card text = "QUIERO COLABORAR CON UNA PROTECTORA"/>
           </div>            
         </div>
 
